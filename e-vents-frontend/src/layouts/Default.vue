@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app>
       <v-toolbar-title>
-        <g-link to="/">E-Vents</g-link>
+        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
       </v-toolbar-title>
       <v-text-field
         placeholder="Search"
