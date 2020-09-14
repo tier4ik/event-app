@@ -25,8 +25,19 @@
       "type": "decimal"
     },
     "categories": {
-      "via": "events",
-      "collection": "category"
+      "collection": "category",
+      "via": "events"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <v-app-bar app>
-      <v-toolbar-title>E-Vents</v-toolbar-title>
+      <v-toolbar-title>
+        <g-link to="/">E-Vents</g-link>
+      </v-toolbar-title>
       <v-text-field
         placeholder="Search"
         style="max-width: 400px;"
@@ -15,7 +17,13 @@
       <v-btn>Create an Event</v-btn>
     </v-app-bar>
     <v-main>
-      <slot/>
+      <v-container>
+        <v-row>
+          <v-col sm="6" offset-sm="3">
+            <slot/>
+          </v-col>
+        </v-row>
+      </v-container>
     </v-main>
   </v-app>
 </template>
